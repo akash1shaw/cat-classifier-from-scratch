@@ -1,9 +1,8 @@
-# cat-classifier-from-scratch
-Binary image classification using a deep neural network from scratch (no ML libraries)
 # 🐱 Cat Classifier from Scratch (No ML Libraries)
 
 This project implements a deep neural network **from scratch using NumPy** to classify images as **cat vs non-cat**.
 
+![Model Architecture](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/600px-Artificial_neural_network.svg.png)
 
 ---
 
@@ -34,6 +33,5 @@ This project implements a deep neural network **from scratch using NumPy** to cl
 
 ---
 
-
-
+## 🖼️ Example Output
 
