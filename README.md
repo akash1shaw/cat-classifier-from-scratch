@@ -1,37 +1,54 @@
-# 🐱 Cat Classifier from Scratch (No ML Libraries)
+# 🧠 Deep Neural Network from Scratch
 
-This project implements a deep neural network **from scratch using NumPy** to classify images as **cat vs non-cat**.
-
-![Model Architecture](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/600px-Artificial_neural_network.svg.png)
+This project contains a fully modular and vectorized implementation of a **Deep Neural Network (DNN)** from scratch using **NumPy**. It covers everything from forward/backward propagation to regularization, dropout, optimizers, and training on real datasets like **Cat vs Non-Cat** and **MNIST digits**.
 
 ---
 
-## 📌 Features
+## 📁 Folder Structure
 
-- Forward and backward propagation manually implemented
-- Supports ReLU, Sigmoid, and Tanh activations
-- Trains on `catvnoncat.h5` dataset from Andrew Ng's DL course
-- Visualizes misclassified test examples
-- Can predict on custom user-supplied image
-
----
-
-## 🧠 Model Architecture
-
-- Input layer: 12288 (64×64×3)
-- Hidden layers: Configurable
-- Output: Sigmoid activation for binary classification
-
----
-
-## 🚀 Training Results
-
-- **Train Accuracy**: 98%
-- **Test Accuracy**: 70–75%
-- Optimized using full-batch gradient descent
-- Cost plotted to show convergence
+| File                          | Description |
+|------------------------------|-------------|
+| `project_deep_NN.ipynb`      | Main notebook walking through model design, training, evaluation.  
+| `MNISTdigit_calssification.ipynb` | Notebook for digit recognition using MNIST dataset.  
+| `main.ipynb`                 | Training/inference notebook for experimentation.  
+| `forward_propagation.py`     | Contains the code for forward pass (linear + activation).  
+| `backward_propagation.py`    | Contains backpropagation logic for each layer.  
+| `back_prop_with_dropout.py`  | Adds dropout regularization during backpropagation.  
+| `regularized_back_prop.py`   | Adds L2 regularization in backpropagation.  
+| `initialization.py`          | Layer weight and bias initialization strategies.  
+| `mini_batch.py`              | Mini-batch generation for stochastic optimization.  
+| `optimizers.py`              | Implements Gradient Descent, Momentum, and Adam optimizers.  
+| `train_catvnoncat.h5`        | Training data for cat vs non-cat binary classification.  
+| `test_catvnoncat.h5`         | Test data for cat vs non-cat.  
+| `a.jpg`                      | A sample image for visual debugging or demo.  
+| `README.md`                  | You’re reading it :)
 
 ---
 
-## 🖼️ Example Output
+## 🚀 Features
+
+- Fully vectorized deep neural network (no frameworks)
+- Supports multiple layers with flexible architecture
+- Forward and backward propagation
+- Dropout regularization
+- L2 regularization
+- Mini-batch gradient descent
+- Optimizers: Gradient Descent, Momentum, Adam
+- Modular codebase for easy reuse and experimentation
+- Notebooks for both binary (cat vs non-cat) and multi-class (MNIST) classification
+
+---
+
+## 🧪 Datasets
+
+- **Cat vs Non-Cat**:
+  - Provided as `.h5` files: `train_catvnoncat.h5`, `test_catvnoncat.h5`
+- **MNIST Digits**:
+  - Downloaded in `MNISTdigit_calssification.ipynb` using Keras or `sklearn`.
+
+---
+
+
+
+
 
